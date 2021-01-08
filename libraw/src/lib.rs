@@ -4,10 +4,10 @@ pub use self::error::{Error, Result};
 pub use self::image::ProcessedImage;
 pub use self::processor::Processor;
 pub use self::rawimage::RawImage;
-pub use self::sizes::Sizes;
+pub use libraw_sys::libraw_image_sizes_t as Sizes;
+pub use libraw_sys::libraw_colordata_t as Colordata;
 
 mod error;
 mod image;
 mod processor;
 mod rawimage;
-mod sizes;
